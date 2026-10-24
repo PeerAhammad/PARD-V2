@@ -1,0 +1,298 @@
+{
+  "env": {
+    "python": "3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)]",
+    "pandas": "2.3.3",
+    "numpy": "2.2.6",
+    "platform": "Windows-10-10.0.26300-SP0"
+  },
+  "files": {
+    "Monday-WorkingHours.pcap_ISCX.csv": {
+      "sha256": "852c4beb34eda186f32561fa79df7a0747e92e1a6535b01270820dd9ffe17f34",
+      "rows": 529918,
+      "n_columns": 79,
+      "labels": {
+        "BENIGN": 529918
+      },
+      "nan_cells": 64,
+      "inf_cells": 810,
+      "negative_cells_in_duration_or_bytes": 39,
+      "exact_duplicate_rows": 26935,
+      "timestamp_sample": null
+    },
+    "Tuesday-WorkingHours.pcap_ISCX.csv": {
+      "sha256": "52b8692ae8c7d2ed04671fe2b98335693c0a92c7ab157d8c8b534d6523080851",
+      "rows": 445909,
+      "n_columns": 79,
+      "labels": {
+        "BENIGN": 432074,
+        "FTP-Patator": 7938,
+        "SSH-Patator": 5897
+      },
+      "nan_cells": 201,
+      "inf_cells": 327,
+      "negative_cells_in_duration_or_bytes": 34,
+      "exact_duplicate_rows": 24065,
+      "timestamp_sample": null
+    },
+    "Wednesday-workingHours.pcap_ISCX.csv": {
+      "sha256": "893c27dc968bf7a8adef1689f90be55ca4a4dc3088fb63d6ff247ac56856df2a",
+      "rows": 692703,
+      "n_columns": 79,
+      "labels": {
+        "BENIGN": 440031,
+        "DoS Hulk": 231073,
+        "DoS GoldenEye": 10293,
+        "DoS slowloris": 5796,
+        "DoS Slowhttptest": 5499,
+        "Heartbleed": 11
+      },
+      "nan_cells": 1008,
+      "inf_cells": 1586,
+      "negative_cells_in_duration_or_bytes": 58,
+      "exact_duplicate_rows": 81909,
+      "timestamp_sample": null
+    },
+    "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv": {
+      "sha256": "d67066211fb1689c78406f1506f4c44704ecb92088353d5c96d96d6474eb819d",
+      "rows": 170366,
+      "n_columns": 79,
+      "labels": {
+        "BENIGN": 168186,
+        "Web Attack \u00ef\u00bf\u00bd Brute Force": 1507,
+        "Web Attack \u00ef\u00bf\u00bd XSS": 652,
+        "Web Attack \u00ef\u00bf\u00bd Sql Injection": 21
+      },
+      "nan_cells": 20,
+      "inf_cells": 250,
+      "negative_cells_in_duration_or_bytes": 32,
+      "exact_duplicate_rows": 6066,
+      "timestamp_sample": null
+    },
+    "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv": {
+      "sha256": "6bcda3857c2504676034e3ea57762d38393cc734cb377a726bd5cb153961b1b5",
+      "rows": 288602,
+      "n_columns": 79,
+      "labels": {
+        "BENIGN": 288566,
+        "Infiltration": 36
+      },
+      "nan_cells": 18,
+      "inf_cells": 396,
+      "negative_cells_in_duration_or_bytes": 12,
+      "exact_duplicate_rows": 35630,
+      "timestamp_sample": null
+    },
+    "Friday-WorkingHours-Morning.pcap_ISCX.csv": {
+      "sha256": "53a41c24d570ea83b7ac55b2e94df94e7a8216aeb80a2af0246b6bc8bb543000",
+      "rows": 191033,
+      "n_columns": 79,
+      "labels": {
+        "BENIGN": 189067,
+        "Bot": 1966
+      },
+      "nan_cells": 28,
+      "inf_cells": 216,
+      "negative_cells_in_duration_or_bytes": 26,
+      "exact_duplicate_rows": 6888,
+      "timestamp_sample": null
+    },
+    "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": {
+      "sha256": "ca1824c51bfbb7b3c72290a11be04366ba8815878c6a1cc5c44cb1cee269e99b",
+      "rows": 286467,
+      "n_columns": 79,
+      "labels": {
+        "PortScan": 158930,
+        "BENIGN": 127537
+      },
+      "nan_cells": 15,
+      "inf_cells": 727,
+      "negative_cells_in_duration_or_bytes": 108,
+      "exact_duplicate_rows": 72353,
+      "timestamp_sample": null
+    },
+    "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv": {
+      "sha256": "6ff1580f5f81c0ae28a26f7631721018577f5f7c5e0feac28b795fcfe7b411ee",
+      "rows": 225745,
+      "n_columns": 79,
+      "labels": {
+        "DDoS": 128027,
+        "BENIGN": 97718
+      },
+      "nan_cells": 4,
+      "inf_cells": 64,
+      "negative_cells_in_duration_or_bytes": 6,
+      "exact_duplicate_rows": 2633,
+      "timestamp_sample": null
+    }
+  },
+  "schema_identical_across_files": true,
+  "n_feature_columns_incl_label": 79,
+  "duplicate_column_names": [],
+  "total_rows": 2830743,
+  "label_distribution_total": {
+    "BENIGN": 2273097,
+    "DoS Hulk": 231073,
+    "PortScan": 158930,
+    "DDoS": 128027,
+    "DoS GoldenEye": 10293,
+    "FTP-Patator": 7938,
+    "SSH-Patator": 5897,
+    "DoS slowloris": 5796,
+    "DoS Slowhttptest": 5499,
+    "Bot": 1966,
+    "Web Attack \u00ef\u00bf\u00bd Brute Force": 1507,
+    "Web Attack \u00ef\u00bf\u00bd XSS": 652,
+    "Infiltration": 36,
+    "Web Attack \u00ef\u00bf\u00bd Sql Injection": 21,
+    "Heartbleed": 11
+  },
+  "label_by_file": {
+    "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv": {
+      "BENIGN": 97718,
+      "Bot": 0,
+      "DDoS": 128027,
+      "DoS GoldenEye": 0,
+      "DoS Hulk": 0,
+      "DoS Slowhttptest": 0,
+      "DoS slowloris": 0,
+      "FTP-Patator": 0,
+      "Heartbleed": 0,
+      "Infiltration": 0,
+      "PortScan": 0,
+      "SSH-Patator": 0,
+      "Web Attack \u00ef\u00bf\u00bd Brute Force": 0,
+      "Web Attack \u00ef\u00bf\u00bd Sql Injection": 0,
+      "Web Attack \u00ef\u00bf\u00bd XSS": 0
+    },
+    "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": {
+      "BENIGN": 127537,
+      "Bot": 0,
+      "DDoS": 0,
+      "DoS GoldenEye": 0,
+      "DoS Hulk": 0,
+      "DoS Slowhttptest": 0,
+      "DoS slowloris": 0,
+      "FTP-Patator": 0,
+      "Heartbleed": 0,
+      "Infiltration": 0,
+      "PortScan": 158930,
+      "SSH-Patator": 0,
+      "Web Attack \u00ef\u00bf\u00bd Brute Force": 0,
+      "Web Attack \u00ef\u00bf\u00bd Sql Injection": 0,
+      "Web Attack \u00ef\u00bf\u00bd XSS": 0
+    },
+    "Friday-WorkingHours-Morning.pcap_ISCX.csv": {
+      "BENIGN": 189067,
+      "Bot": 1966,
+      "DDoS": 0,
+      "DoS GoldenEye": 0,
+      "DoS Hulk": 0,
+      "DoS Slowhttptest": 0,
+      "DoS slowloris": 0,
+      "FTP-Patator": 0,
+      "Heartbleed": 0,
+      "Infiltration": 0,
+      "PortScan": 0,
+      "SSH-Patator": 0,
+      "Web Attack \u00ef\u00bf\u00bd Brute Force": 0,
+      "Web Attack \u00ef\u00bf\u00bd Sql Injection": 0,
+      "Web Attack \u00ef\u00bf\u00bd XSS": 0
+    },
+    "Monday-WorkingHours.pcap_ISCX.csv": {
+      "BENIGN": 529918,
+      "Bot": 0,
+      "DDoS": 0,
+      "DoS GoldenEye": 0,
+      "DoS Hulk": 0,
+      "DoS Slowhttptest": 0,
+      "DoS slowloris": 0,
+      "FTP-Patator": 0,
+      "Heartbleed": 0,
+      "Infiltration": 0,
+      "PortScan": 0,
+      "SSH-Patator": 0,
+      "Web Attack \u00ef\u00bf\u00bd Brute Force": 0,
+      "Web Attack \u00ef\u00bf\u00bd Sql Injection": 0,
+      "Web Attack \u00ef\u00bf\u00bd XSS": 0
+    },
+    "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv": {
+      "BENIGN": 288566,
+      "Bot": 0,
+      "DDoS": 0,
+      "DoS GoldenEye": 0,
+      "DoS Hulk": 0,
+      "DoS Slowhttptest": 0,
+      "DoS slowloris": 0,
+      "FTP-Patator": 0,
+      "Heartbleed": 0,
+      "Infiltration": 36,
+      "PortScan": 0,
+      "SSH-Patator": 0,
+      "Web Attack \u00ef\u00bf\u00bd Brute Force": 0,
+      "Web Attack \u00ef\u00bf\u00bd Sql Injection": 0,
+      "Web Attack \u00ef\u00bf\u00bd XSS": 0
+    },
+    "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv": {
+      "BENIGN": 168186,
+      "Bot": 0,
+      "DDoS": 0,
+      "DoS GoldenEye": 0,
+      "DoS Hulk": 0,
+      "DoS Slowhttptest": 0,
+      "DoS slowloris": 0,
+      "FTP-Patator": 0,
+      "Heartbleed": 0,
+      "Infiltration": 0,
+      "PortScan": 0,
+      "SSH-Patator": 0,
+      "Web Attack \u00ef\u00bf\u00bd Brute Force": 1507,
+      "Web Attack \u00ef\u00bf\u00bd Sql Injection": 21,
+      "Web Attack \u00ef\u00bf\u00bd XSS": 652
+    },
+    "Tuesday-WorkingHours.pcap_ISCX.csv": {
+      "BENIGN": 432074,
+      "Bot": 0,
+      "DDoS": 0,
+      "DoS GoldenEye": 0,
+      "DoS Hulk": 0,
+      "DoS Slowhttptest": 0,
+      "DoS slowloris": 0,
+      "FTP-Patator": 7938,
+      "Heartbleed": 0,
+      "Infiltration": 0,
+      "PortScan": 0,
+      "SSH-Patator": 5897,
+      "Web Attack \u00ef\u00bf\u00bd Brute Force": 0,
+      "Web Attack \u00ef\u00bf\u00bd Sql Injection": 0,
+      "Web Attack \u00ef\u00bf\u00bd XSS": 0
+    },
+    "Wednesday-workingHours.pcap_ISCX.csv": {
+      "BENIGN": 440031,
+      "Bot": 0,
+      "DDoS": 0,
+      "DoS GoldenEye": 10293,
+      "DoS Hulk": 231073,
+      "DoS Slowhttptest": 5499,
+      "DoS slowloris": 5796,
+      "FTP-Patator": 0,
+      "Heartbleed": 11,
+      "Infiltration": 0,
+      "PortScan": 0,
+      "SSH-Patator": 0,
+      "Web Attack \u00ef\u00bf\u00bd Brute Force": 0,
+      "Web Attack \u00ef\u00bf\u00bd Sql Injection": 0,
+      "Web Attack \u00ef\u00bf\u00bd XSS": 0
+    }
+  },
+  "cross_file_duplicate_rows": 66945,
+  "constant_columns": [
+    "Bwd PSH Flags",
+    "Bwd URG Flags",
+    "Fwd Avg Bytes/Bulk",
+    "Fwd Avg Packets/Bulk",
+    "Fwd Avg Bulk Rate",
+    "Bwd Avg Bytes/Bulk",
+    "Bwd Avg Packets/Bulk",
+    "Bwd Avg Bulk Rate"
+  ]
+}

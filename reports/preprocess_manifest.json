@@ -1,0 +1,242 @@
+{
+  "script": "phase1_preprocess.py",
+  "git_commit": "e043200298b2072ab999148b5ca9fbfae6cf122f",
+  "python": "3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)]",
+  "pandas": "2.3.3",
+  "numpy": "2.2.6",
+  "time_proxy": "row order within file (no Timestamp in this release)",
+  "dropped_columns": [
+    "Fwd Header Length.1 (verified identical)",
+    "Bwd PSH Flags",
+    "Bwd URG Flags",
+    "Fwd Avg Bytes/Bulk",
+    "Fwd Avg Packets/Bulk",
+    "Fwd Avg Bulk Rate",
+    "Bwd Avg Bytes/Bulk",
+    "Bwd Avg Packets/Bulk",
+    "Bwd Avg Bulk Rate"
+  ],
+  "files": {
+    "mon": {
+      "raw_file": "Monday-WorkingHours.pcap_ISCX.csv",
+      "raw_sha256": "852c4beb34eda186f32561fa79df7a0747e92e1a6535b01270820dd9ffe17f34",
+      "parquet_sha256": "fc6b658f3046b77e96cf43611cd53b3c0bc66831c0afff2889330e2a48cb9328",
+      "rows": 529918,
+      "n_features": 69,
+      "labels": {
+        "BENIGN": 529918
+      },
+      "nan_cells_after_cleaning": 913,
+      "rows_with_invalid": 452,
+      "inf_cells": 810,
+      "negative_cells": {
+        "Flow Duration": 15,
+        "Flow Bytes/s": 9,
+        "Flow Packets/s": 15
+      },
+      "dup_in_file": 26935,
+      "dup_in_file_by_label": {
+        "BENIGN": 26935
+      }
+    },
+    "tue": {
+      "raw_file": "Tuesday-WorkingHours.pcap_ISCX.csv",
+      "raw_sha256": "52b8692ae8c7d2ed04671fe2b98335693c0a92c7ab157d8c8b534d6523080851",
+      "parquet_sha256": "9e3a1295bfc9549cb504ff7280f3fd2de9dad4ca0ffbeecef4666dd09173c772",
+      "rows": 445909,
+      "n_features": 69,
+      "labels": {
+        "BENIGN": 432074,
+        "FTP-Patator": 7938,
+        "SSH-Patator": 5897
+      },
+      "nan_cells_after_cleaning": 562,
+      "rows_with_invalid": 281,
+      "inf_cells": 327,
+      "negative_cells": {
+        "Flow Duration": 17,
+        "Flow Bytes/s": 0,
+        "Flow Packets/s": 17
+      },
+      "dup_in_file": 24065,
+      "dup_in_file_by_label": {
+        "BENIGN": 19382,
+        "SSH-Patator": 2678,
+        "FTP-Patator": 2005
+      }
+    },
+    "wed": {
+      "raw_file": "Wednesday-workingHours.pcap_ISCX.csv",
+      "raw_sha256": "893c27dc968bf7a8adef1689f90be55ca4a4dc3088fb63d6ff247ac56856df2a",
+      "parquet_sha256": "c055f268dea849c90dbf8eb62f288c23e9481e350d994f21b9576788f6c9e7d7",
+      "rows": 692703,
+      "n_features": 69,
+      "labels": {
+        "BENIGN": 440031,
+        "DoS Hulk": 231073,
+        "DoS GoldenEye": 10293,
+        "DoS slowloris": 5796,
+        "DoS Slowhttptest": 5499,
+        "Heartbleed": 11
+      },
+      "nan_cells_after_cleaning": 2652,
+      "rows_with_invalid": 1318,
+      "inf_cells": 1586,
+      "negative_cells": {
+        "Flow Duration": 21,
+        "Flow Bytes/s": 16,
+        "Flow Packets/s": 21
+      },
+      "dup_in_file": 81957,
+      "dup_in_file_by_label": {
+        "DoS Hulk": 58229,
+        "BENIGN": 23039,
+        "DoS slowloris": 411,
+        "DoS Slowhttptest": 271,
+        "DoS GoldenEye": 7
+      }
+    },
+    "thu_am_web": {
+      "raw_file": "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+      "raw_sha256": "d67066211fb1689c78406f1506f4c44704ecb92088353d5c96d96d6474eb819d",
+      "parquet_sha256": "63e0f5c1a0270a832ddb0bf48abd707b50abd241e3c2b317eb711b22e986d23e",
+      "rows": 170366,
+      "n_features": 69,
+      "labels": {
+        "BENIGN": 168186,
+        "Web Attack - Brute Force": 1507,
+        "Web Attack - XSS": 652,
+        "Web Attack - Sql Injection": 21
+      },
+      "nan_cells_after_cleaning": 302,
+      "rows_with_invalid": 146,
+      "inf_cells": 250,
+      "negative_cells": {
+        "Flow Duration": 11,
+        "Flow Bytes/s": 10,
+        "Flow Packets/s": 11
+      },
+      "dup_in_file": 6066,
+      "dup_in_file_by_label": {
+        "BENIGN": 6029,
+        "Web Attack - Brute Force": 37
+      }
+    },
+    "thu_pm_inf": {
+      "raw_file": "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+      "raw_sha256": "6bcda3857c2504676034e3ea57762d38393cc734cb377a726bd5cb153961b1b5",
+      "parquet_sha256": "0da1701e4e265ba2c9990a0c34298d6a16b2c3d09eca6a05f8cb722a68cc76aa",
+      "rows": 288602,
+      "n_features": 69,
+      "labels": {
+        "BENIGN": 288566,
+        "Infiltration": 36
+      },
+      "nan_cells_after_cleaning": 426,
+      "rows_with_invalid": 211,
+      "inf_cells": 396,
+      "negative_cells": {
+        "Flow Duration": 4,
+        "Flow Bytes/s": 4,
+        "Flow Packets/s": 4
+      },
+      "dup_in_file": 35630,
+      "dup_in_file_by_label": {
+        "BENIGN": 35630
+      }
+    },
+    "fri_am": {
+      "raw_file": "Friday-WorkingHours-Morning.pcap_ISCX.csv",
+      "raw_sha256": "53a41c24d570ea83b7ac55b2e94df94e7a8216aeb80a2af0246b6bc8bb543000",
+      "parquet_sha256": "85404901694b1502560951ab12f7175c487a3e6d34f1ba02a36a1a74a7209393",
+      "rows": 191033,
+      "n_features": 69,
+      "labels": {
+        "BENIGN": 189067,
+        "Bot": 1966
+      },
+      "nan_cells_after_cleaning": 270,
+      "rows_with_invalid": 131,
+      "inf_cells": 216,
+      "negative_cells": {
+        "Flow Duration": 9,
+        "Flow Bytes/s": 8,
+        "Flow Packets/s": 9
+      },
+      "dup_in_file": 6888,
+      "dup_in_file_by_label": {
+        "BENIGN": 6875,
+        "Bot": 13
+      }
+    },
+    "fri_pm_scan": {
+      "raw_file": "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+      "raw_sha256": "ca1824c51bfbb7b3c72290a11be04366ba8815878c6a1cc5c44cb1cee269e99b",
+      "parquet_sha256": "67c6b0bee6608748e5551d4918ff300096253069439f83a67863be309d7270f1",
+      "rows": 286467,
+      "n_features": 69,
+      "labels": {
+        "PortScan": 158930,
+        "BENIGN": 127537
+      },
+      "nan_cells_after_cleaning": 850,
+      "rows_with_invalid": 407,
+      "inf_cells": 727,
+      "negative_cells": {
+        "Flow Duration": 36,
+        "Flow Bytes/s": 36,
+        "Flow Packets/s": 36
+      },
+      "dup_in_file": 72353,
+      "dup_in_file_by_label": {
+        "PortScan": 68111,
+        "BENIGN": 4242
+      }
+    },
+    "fri_pm_ddos": {
+      "raw_file": "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+      "raw_sha256": "6ff1580f5f81c0ae28a26f7631721018577f5f7c5e0feac28b795fcfe7b411ee",
+      "parquet_sha256": "adc4dc93feeef1199ab20c84ca88e0465efe1e9b5f976ed937fce68c6fb63a52",
+      "rows": 225745,
+      "n_features": 69,
+      "labels": {
+        "DDoS": 128027,
+        "BENIGN": 97718
+      },
+      "nan_cells_after_cleaning": 74,
+      "rows_with_invalid": 36,
+      "inf_cells": 64,
+      "negative_cells": {
+        "Flow Duration": 2,
+        "Flow Bytes/s": 2,
+        "Flow Packets/s": 2
+      },
+      "dup_in_file": 2633,
+      "dup_in_file_by_label": {
+        "BENIGN": 2622,
+        "DDoS": 11
+      }
+    }
+  },
+  "cross_file_duplicate_hashes": 34208,
+  "label_conflict_hashes": 698,
+  "rows_in_label_conflict_hashes": 7020,
+  "total_rows": 2830743,
+  "label_distribution": {
+    "BENIGN": 2273097,
+    "DoS Hulk": 231073,
+    "PortScan": 158930,
+    "DDoS": 128027,
+    "DoS GoldenEye": 10293,
+    "FTP-Patator": 7938,
+    "SSH-Patator": 5897,
+    "DoS slowloris": 5796,
+    "DoS Slowhttptest": 5499,
+    "Bot": 1966,
+    "Web Attack - Brute Force": 1507,
+    "Web Attack - XSS": 652,
+    "Infiltration": 36,
+    "Web Attack - Sql Injection": 21,
+    "Heartbleed": 11
+  }
+}
