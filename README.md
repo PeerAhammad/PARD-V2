@@ -285,49 +285,6 @@ The following values are from the reported per-episode in-distribution results.
 
 The reported metrics are specific to this evaluation. They should not be generalized to every attack family, traffic distribution, or deployment environment.
 
-### Visual 1 — Confusion matrices by episode
-
-![Per-episode confusion matrices](results/final_20261028_172705_final/confusion_per_episode.png)
-
-*Use this plot to inspect the distribution of true positives, true negatives, false positives, and false negatives across the evaluated episodes.*
-
-### Visual 2 — Held-out attack-family performance
-
-![Leave-family-out recall and false-positive rate](results/final_20261028_172705_final/lfo_recall_fpr.png)
-
-*This plot highlights performance under the leave-family-out evaluation protocol.*
-
-### Visual 3 — Recall across attack families
-
-![Test recall by attack family](results/final_20261028_172705_final/family_recall_test.png)
-
-*Compare performance across attack families rather than relying on a single aggregate metric.*
-
-### Visual 4 — SSM contribution
-
-![SSM minus baseline](results/final_20261028_172705_final/ssm_minus_base.png)
-
-*Inspect where the SSM-augmented approach improves or degrades performance relative to the baseline.*
-
-### Visual 5 — Confusion counts
-
-![Mean confusion counts across seeds](results/final_20261028_172705_final/confusion_counts_mean_over_seeds.csv)
-
-The confusion-count artifact above is a CSV file rather than an image. To display it visually in the README, generate a chart from the CSV and commit the resulting PNG.
-
-Recommended output path:
-
-`results/final_20261028_172705_final/confusion_counts.png`
-
-### Visual 6 — Incident detection
-
-![Incident detection results](results/final_20261028_172705_final/incident_detection.png)
-
-*Use this visualization to examine the incident-detection behavior represented by the experiment.*
-
-> **Image-path note:** The README references result artifacts reported in the project context. Confirm each file exists at the exact path and is tracked by Git before publishing. GitHub cannot render an image from a CSV file; replace the confusion-count CSV reference with a generated PNG as noted above.
-
----
 
 ## Generalization to Unseen Attack Families
 
