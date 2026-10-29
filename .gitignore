@@ -1,7 +1,48 @@
+﻿
+# Python environments
+
+.venv/
+venv/
+env/
+
+# Python caches
+
+**pycache**/
+*.py[cod]
+
+# Local environment and secrets
+
+.env
+.env.*
+!.env.example
+
+# Raw datasets
+
 data/raw/
 data/*.csv
+
+# Generated datasets and splits
+
 data/processed/*.parquet
-.venv/
-__pycache__/
+data/splits/*.parquet
+
+# Model artifacts
+
 *.pkl
 *.joblib
+
+# Temporary files
+
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Intermediate experiment outputs
+results/baselines_*/
+results/lfo_*/
+results/phase3_*/
+results/phase4_*/
+results/test_access_log.csv
+
+# Demo-only test input
+demo/test_upload.csv

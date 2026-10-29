@@ -1,0 +1,16 @@
+{
+  "fpr_budget": 0.01,
+  "max_benign_train": 600000,
+  "block": 5000,
+  "n_regimes": 4,
+  "hmm_iter": 15,
+  "seeds": 2,
+  "incident": "attack rows <= 500 rows apart form one incident; detected if >= 3 flows alerted",
+  "rf": {
+    "n_estimators": 200,
+    "max_samples": 0.25,
+    "min_samples_leaf": 2,
+    "n_jobs": -1
+  },
+  "only": ""
+}

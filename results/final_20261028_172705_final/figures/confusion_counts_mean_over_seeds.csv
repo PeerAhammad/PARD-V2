@@ -1,0 +1,31 @@
+fold,variant,tp,fn,fp,tn
+day:thu_am_web,base,361.0,29.0,1043.0,89190.0
+day:thu_am_web,ssm,359.5,30.5,1037.0,89196.0
+day:tue,base,1209.5,1341.5,5436.5,154730.5
+day:tue,ssm,1225.5,1325.5,5159.0,155008.0
+day:wed,base,31188.5,17179.5,879.5,50435.5
+day:wed,ssm,29094.5,19273.5,835.0,50480.0
+family:Bot,base,0.0,385.0,354.5,37721.5
+family:Bot,ssm,0.0,385.0,354.0,37722.0
+family:DDoS,base,13873.0,10732.0,4509.0,33478.0
+family:DDoS,ssm,13810.0,10795.0,4530.5,33456.5
+family:DoS GoldenEye,base,1812.5,200.5,454.5,33031.5
+family:DoS GoldenEye,ssm,1858.5,154.5,468.5,33017.5
+family:DoS Hulk,base,30099.5,14190.5,431.5,12318.5
+family:DoS Hulk,ssm,27959.0,16331.0,399.5,12350.5
+family:DoS Slowhttptest,base,967.5,22.5,0.0,8.0
+family:DoS Slowhttptest,ssm,955.5,34.5,0.0,8.0
+family:DoS slowloris,base,1073.0,2.0,35.0,4699.0
+family:DoS slowloris,ssm,1073.0,2.0,28.5,4705.5
+family:FTP-Patator,base,1390.0,0.0,787.0,96406.0
+family:FTP-Patator,ssm,1390.0,0.0,871.0,96322.0
+family:PortScan,base,639.0,29992.0,209.5,33179.5
+family:PortScan,ssm,635.0,29996.0,225.0,33164.0
+family:SSH-Patator,base,517.0,644.0,773.0,60296.0
+family:SSH-Patator,ssm,523.5,637.5,859.5,60209.5
+family:Web Attack - Brute Force,base,258.0,13.0,106.5,11412.5
+family:Web Attack - Brute Force,ssm,258.0,13.0,93.5,11425.5
+family:Web Attack - XSS,base,117.0,2.0,925.0,77639.0
+family:Web Attack - XSS,ssm,116.0,3.0,896.0,77668.0
+per_episode:test,base,77799.0,394.0,5756.5,552152.5
+per_episode:test,ssm,77800.0,393.0,6148.0,551761.0

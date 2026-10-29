@@ -1,0 +1,121 @@
+fold,variant,seed,family,n,recall
+family:Bot,base,0,Bot,385,0.0
+family:Bot,base,1,Bot,385,0.0
+family:Bot,ssm,0,Bot,385,0.0
+family:Bot,ssm,1,Bot,385,0.0
+family:DDoS,base,0,DDoS,24605,0.5611461085145296
+family:DDoS,base,1,DDoS,24605,0.5665108717740297
+family:DDoS,ssm,0,DDoS,24605,0.5615525299735826
+family:DDoS,ssm,1,DDoS,24605,0.5609835399309083
+family:DoS GoldenEye,base,0,DoS GoldenEye,2013,0.920019870839543
+family:DoS GoldenEye,base,1,DoS GoldenEye,2013,0.8807749627421758
+family:DoS GoldenEye,ssm,0,DoS GoldenEye,2013,0.9230004967709886
+family:DoS GoldenEye,ssm,1,DoS GoldenEye,2013,0.9234972677595629
+family:DoS Hulk,base,0,DoS Hulk,44290,0.7102957778279522
+family:DoS Hulk,base,1,DoS Hulk,44290,0.6489049446827726
+family:DoS Hulk,ssm,0,DoS Hulk,44290,0.6281779182659742
+family:DoS Hulk,ssm,1,DoS Hulk,44290,0.6343644163468052
+family:DoS Slowhttptest,base,0,DoS Slowhttptest,990,0.9616161616161616
+family:DoS Slowhttptest,base,1,DoS Slowhttptest,990,0.9929292929292929
+family:DoS Slowhttptest,ssm,0,DoS Slowhttptest,990,0.9606060606060606
+family:DoS Slowhttptest,ssm,1,DoS Slowhttptest,990,0.9696969696969697
+family:DoS slowloris,base,0,DoS slowloris,1075,0.998139534883721
+family:DoS slowloris,base,1,DoS slowloris,1075,0.998139534883721
+family:DoS slowloris,ssm,0,DoS slowloris,1075,0.998139534883721
+family:DoS slowloris,ssm,1,DoS slowloris,1075,0.998139534883721
+family:FTP-Patator,base,0,FTP-Patator,1390,1.0
+family:FTP-Patator,base,1,FTP-Patator,1390,1.0
+family:FTP-Patator,ssm,0,FTP-Patator,1390,1.0
+family:FTP-Patator,ssm,1,FTP-Patator,1390,1.0
+family:PortScan,base,0,PortScan,30631,0.023375012242499427
+family:PortScan,base,1,PortScan,30631,0.018347425810453462
+family:PortScan,ssm,0,PortScan,30631,0.023538245568215207
+family:PortScan,ssm,1,PortScan,30631,0.01792301916359244
+family:SSH-Patator,base,0,SSH-Patator,1161,0.4453057708871662
+family:SSH-Patator,base,1,SSH-Patator,1161,0.4453057708871662
+family:SSH-Patator,ssm,0,SSH-Patator,1161,0.45564168819982775
+family:SSH-Patator,ssm,1,SSH-Patator,1161,0.446167097329888
+family:Web Attack - Brute Force,base,0,Web Attack - Brute Force,271,0.9520295202952029
+family:Web Attack - Brute Force,base,1,Web Attack - Brute Force,271,0.9520295202952029
+family:Web Attack - Brute Force,ssm,0,Web Attack - Brute Force,271,0.9520295202952029
+family:Web Attack - Brute Force,ssm,1,Web Attack - Brute Force,271,0.9520295202952029
+family:Web Attack - XSS,base,0,Web Attack - XSS,119,0.9831932773109243
+family:Web Attack - XSS,base,1,Web Attack - XSS,119,0.9831932773109243
+family:Web Attack - XSS,ssm,0,Web Attack - XSS,119,0.9747899159663865
+family:Web Attack - XSS,ssm,1,Web Attack - XSS,119,0.9747899159663865
+day:tue,base,0,FTP-Patator,1390,0.4949640287769784
+day:tue,base,0,SSH-Patator,1161,0.4590869939707149
+day:tue,base,1,FTP-Patator,1390,0.4935251798561151
+day:tue,base,1,SSH-Patator,1161,0.4409991386735573
+day:tue,ssm,0,FTP-Patator,1390,0.49712230215827335
+day:tue,ssm,0,SSH-Patator,1161,0.46856158484065463
+day:tue,ssm,1,FTP-Patator,1390,0.48992805755395685
+day:tue,ssm,1,SSH-Patator,1161,0.4608096468561585
+day:wed,base,0,DoS GoldenEye,2013,0.6631892697466468
+day:wed,base,0,DoS Hulk,44290,0.6803115827500564
+day:wed,base,0,DoS Slowhttptest,990,0.10404040404040404
+day:wed,base,0,DoS slowloris,1075,0.546046511627907
+day:wed,base,1,DoS GoldenEye,2013,0.6636860407352211
+day:wed,base,1,DoS Hulk,44290,0.6387220591555656
+day:wed,base,1,DoS Slowhttptest,990,0.00909090909090909
+day:wed,base,1,DoS slowloris,1075,0.546046511627907
+day:wed,ssm,0,DoS GoldenEye,2013,0.6462990561351217
+day:wed,ssm,0,DoS Hulk,44290,0.6168209528110183
+day:wed,ssm,0,DoS Slowhttptest,990,0.0030303030303030303
+day:wed,ssm,0,DoS slowloris,1075,0.45488372093023255
+day:wed,ssm,1,DoS GoldenEye,2013,0.6597118728266269
+day:wed,ssm,1,DoS Hulk,44290,0.6132083991871754
+day:wed,ssm,1,DoS Slowhttptest,990,0.00404040404040404
+day:wed,ssm,1,DoS slowloris,1075,0.5451162790697675
+day:thu_am_web,base,0,Web Attack - Brute Force,271,0.9114391143911439
+day:thu_am_web,base,0,Web Attack - XSS,119,0.957983193277311
+day:thu_am_web,base,1,Web Attack - Brute Force,271,0.9114391143911439
+day:thu_am_web,base,1,Web Attack - XSS,119,0.957983193277311
+day:thu_am_web,ssm,0,Web Attack - Brute Force,271,0.9077490774907749
+day:thu_am_web,ssm,0,Web Attack - XSS,119,0.9495798319327731
+day:thu_am_web,ssm,1,Web Attack - Brute Force,271,0.9114391143911439
+day:thu_am_web,ssm,1,Web Attack - XSS,119,0.9495798319327731
+per_episode:test,base,0,Bot,385,0.0
+per_episode:test,base,0,DDoS,24601,0.9999593512458843
+per_episode:test,base,0,DoS GoldenEye,2013,1.0
+per_episode:test,base,0,DoS Hulk,32690,0.9999388192107678
+per_episode:test,base,0,DoS Slowhttptest,990,1.0
+per_episode:test,base,0,DoS slowloris,1041,1.0
+per_episode:test,base,0,FTP-Patator,946,1.0
+per_episode:test,base,0,PortScan,14511,0.9997932602853008
+per_episode:test,base,0,SSH-Patator,634,1.0
+per_episode:test,base,0,Web Attack - Brute Force,263,1.0
+per_episode:test,base,0,Web Attack - XSS,119,0.9831932773109243
+per_episode:test,base,1,Bot,385,0.0
+per_episode:test,base,1,DDoS,24601,0.9999593512458843
+per_episode:test,base,1,DoS GoldenEye,2013,1.0
+per_episode:test,base,1,DoS Hulk,32690,0.9998776384215357
+per_episode:test,base,1,DoS Slowhttptest,990,1.0
+per_episode:test,base,1,DoS slowloris,1041,0.9990393852065321
+per_episode:test,base,1,FTP-Patator,946,1.0
+per_episode:test,base,1,PortScan,14511,0.9998621735235339
+per_episode:test,base,1,SSH-Patator,634,1.0
+per_episode:test,base,1,Web Attack - Brute Force,263,1.0
+per_episode:test,base,1,Web Attack - XSS,119,0.9831932773109243
+per_episode:test,ssm,0,Bot,385,0.0
+per_episode:test,ssm,0,DDoS,24601,0.9999593512458843
+per_episode:test,ssm,0,DoS GoldenEye,2013,1.0
+per_episode:test,ssm,0,DoS Hulk,32690,0.9999388192107678
+per_episode:test,ssm,0,DoS Slowhttptest,990,0.998989898989899
+per_episode:test,ssm,0,DoS slowloris,1041,0.9990393852065321
+per_episode:test,ssm,0,FTP-Patator,946,1.0
+per_episode:test,ssm,0,PortScan,14511,0.9998621735235339
+per_episode:test,ssm,0,SSH-Patator,634,1.0
+per_episode:test,ssm,0,Web Attack - Brute Force,263,1.0
+per_episode:test,ssm,0,Web Attack - XSS,119,0.9831932773109243
+per_episode:test,ssm,1,Bot,385,0.0
+per_episode:test,ssm,1,DDoS,24601,0.9999593512458843
+per_episode:test,ssm,1,DoS GoldenEye,2013,1.0
+per_episode:test,ssm,1,DoS Hulk,32690,0.9999388192107678
+per_episode:test,ssm,1,DoS Slowhttptest,990,1.0
+per_episode:test,ssm,1,DoS slowloris,1041,0.9990393852065321
+per_episode:test,ssm,1,FTP-Patator,946,1.0
+per_episode:test,ssm,1,PortScan,14511,0.9999310867617669
+per_episode:test,ssm,1,SSH-Patator,634,1.0
+per_episode:test,ssm,1,Web Attack - Brute Force,263,1.0
+per_episode:test,ssm,1,Web Attack - XSS,119,0.9831932773109243
