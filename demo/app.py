@@ -1,5 +1,5 @@
 """PARD-SSM intrusion-detection research demo (Streamlit). Run from the project root:  streamlit run demo/app.py"""
-import json, time
+import io, json, re, time
 from pathlib import Path
 import numpy as np, pandas as pd, streamlit as st
 import matplotlib; matplotlib.use("Agg")
@@ -20,6 +20,23 @@ def load_model():
 def latest_final():
     d = sorted([p for p in RES.glob("final_*") if (p / "final_summary.csv").exists()])
     return d[-1] if d else None
+
+
+def read_flows(up, nrows=300_000):
+    """Tolerant CSV reader: sniffs the delimiter, strips BOM/whitespace, matches columns case-insensitively."""
+    raw = up.getvalue()
+    head = raw[:50_000].decode("latin-1", errors="replace")
+    first = head.replace("\ufeff", "").replace("\xef\xbb\xbf", "").lstrip().splitlines()[0] if head.strip() else ""
+    sep = max([",", ";", "\t", "|"], key=first.count)
+    df = pd.read_csv(io.BytesIO(raw), sep=sep, encoding="latin-1", low_memory=False, nrows=nrows)
+    df.columns = [re.sub(r"\s+", " ", str(c).replace("\xef\xbb\xbf", "").replace("\ufeff", "")).strip() for c in df.columns]
+    return df, sep
+
+def match_features(df, feats):
+    low = {c.lower(): c for c in df.columns}
+    ren = {low[f.lower()]: f for f in feats if f.lower() in low and low[f.lower()] != f}
+    df = df.rename(columns=ren)
+    return df, [f for f in feats if f not in df.columns]
 
 def cm_figure(tn, fp, fn, tp, title=""):
     C = np.array([[tn, fp], [fn, tp]], float); N = C / np.maximum(C.sum(1, keepdims=True), 1)
@@ -137,12 +154,16 @@ else:
     st.caption("Upload a CICIDS2017-style CSV (same 78 feature columns; Label optional). Rows are scored with the base RF.")
     up = st.file_uploader("CSV file", type="csv")
     if up is not None:
-        df = pd.read_csv(up, encoding="latin-1", low_memory=False, nrows=300_000)
-        df.columns = df.columns.str.strip()
+        df, sep = read_flows(up)
         mdl = load_model(); feats = mdl["feats"]
-        miss = [c for c in feats if c not in df.columns]
+        df, miss = match_features(df, feats)
         if miss:
-            st.error(f"Missing {len(miss)} feature columns, e.g. {miss[:5]}"); st.stop()
+            st.error(f"Missing {len(miss)} of {len(feats)} feature columns (e.g. {miss[:5]}).")
+            st.write(f"The file was read with delimiter {sep!r}: {df.shape[0]:,} rows x {df.shape[1]} columns.")
+            st.write("First columns found:", list(df.columns[:10]))
+            st.info("Expected a CICIDS2017 flow CSV (MachineLearningCVE layout) or the file made by "
+                    "src/make_test_csv.py. Make sure the first line of the file is the header row.")
+            st.stop()
         X = df[feats].apply(pd.to_numeric, errors="coerce").replace([np.inf, -np.inf], np.nan)
         for c in NONNEG:
             if c in X: X.loc[X[c] < 0, c] = np.nan
