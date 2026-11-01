@@ -152,7 +152,16 @@ elif page == "Results":
 else:
     st.title("Score your own flows")
     st.caption("Upload a CICIDS2017-style CSV (same 78 feature columns; Label optional). Rows are scored with the base RF.")
-    up = st.file_uploader("CSV file", type="csv")
+    sample = DEMO / "sample_flows.csv"
+    opts = (["Built-in sample (held-out test flows)"] if sample.exists() else []) + ["Upload a CSV"]
+    choice = st.radio("Source", opts, horizontal=True)
+    if choice.startswith("Built-in"):
+        class _B:
+            def __init__(self, b): self.b = b
+            def getvalue(self): return self.b
+        up = _B(sample.read_bytes())
+    else:
+        up = st.file_uploader("CSV file (a CICIDS2017-style flow file, about 3 MB for the sample)", type="csv")
     if up is not None:
         df, sep = read_flows(up)
         mdl = load_model(); feats = mdl["feats"]
@@ -161,6 +170,9 @@ else:
             st.error(f"Missing {len(miss)} of {len(feats)} feature columns (e.g. {miss[:5]}).")
             st.write(f"The file was read with delimiter {sep!r}: {df.shape[0]:,} rows x {df.shape[1]} columns.")
             st.write("First columns found:", list(df.columns[:10]))
+            if df.shape[1] < 10:
+                st.warning(f"This file has only {df.shape[1]} columns, so it is not a flow file (it looks like a log or "
+                           "summary file). Use the built-in sample, or upload demo/test_upload.csv.")
             st.info("Expected a CICIDS2017 flow CSV (MachineLearningCVE layout) or the file made by "
                     "src/make_test_csv.py. Make sure the first line of the file is the header row.")
             st.stop()
